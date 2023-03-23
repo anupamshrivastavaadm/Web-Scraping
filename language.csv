@@ -1,0 +1,64 @@
+"
+","identity lambda
+","lambda
+","map
+","apply
+","filter
+","fold
+","sum
+"
+"Python
+","lambda x: x
+","lambda args: expr
+","map(func, list)
+","nfunc(*arguments)
+","filter(pred, list)
+","functools.reduce(func2, list)
+","sum(list)
+"
+"Mathematica
+","#&
+","(expr)& (arguments are #1, #2, etc.)
+Function[{args},expr]
+
+","Map[func, list]
+func /@ list
+
+","Apply[nfunc, args]
+nfunc@@args
+
+","Select[list, pred]
+","Fold[func2, val, list]
+","Apply[Plus,list]
+Plus@@list
+
+"
+"C#[1]
+","x => x
+","(args) => expr
+","Enumerable.Select(list, func)
+","Requires reflection
+","Enumerable.Where(list, pred)
+","Enumerable.Aggregate(list, func2)
+Enumerable.Aggregate(list, val, func2)
+
+","Enumerable.Sum(list)
+Enumerable.Sum(list, func)
+
+"
+"Visual Basic .NET[1]
+","Function(x) x
+","Function(args) expr
+"
+"F#[2] (can use Enumerable as well)
+","id(built-in)
+fun x -> x
+
+","fun pattern -> expr
+","Seq.map func list
+","Seq.filter pred list
+","Seq.fold func2 val list
+","Seq.sum list
+Seq.sumBy func list
+
+"
